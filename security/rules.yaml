@@ -1,0 +1,29 @@
+mpesa:
+  signature_algorithm: "none"
+  verification_method: "ip_allowlist+resultcode"
+  replay_window_seconds: null
+  idempotency_key_field: null
+  required_env_vars:
+    - "MPESA_CONSUMER_KEY"
+    - "MPESA_CONSUMER_SECRET"
+    - "MPESA_BUSINESS_SHORTCODE"
+    - "MPESA_PASSKEY"
+    - "MPESA_CALLBACK_URL"
+  notes: "M-Pesa Daraja callbacks do not use an HMAC signature in this scaffold design. Verification relies on callback source allowlisting plus validating successful provider ResultCode values before treating a callback as successful."
+
+paystack:
+  signature_algorithm: "hmac_sha512"
+  verification_method: "hmac_sha512"
+  signature_header: "x-paystack-signature"
+  replay_window_seconds: null
+  idempotency_key_field: null
+  required_env_vars:
+    - "PAYSTACK_SECRET_KEY"
+  notes: "Paystack webhooks are verified by computing an HMAC SHA-512 digest over the raw request body using the Paystack secret key and comparing it with the x-paystack-signature header."
+
+at:
+  required_env_vars:
+    - "AT_USERNAME"
+    - "AT_API_KEY"
+    - "AT_SENDER_ID"
+  notes: "Africa's Talking SMS has no webhook verification requirement for this MVP provider spec."
