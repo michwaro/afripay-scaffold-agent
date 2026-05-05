@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "afripay"
+version = "0.1.0"
+description = "Security-hardened scaffolds for African payment and communications APIs."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "typer",
+    "rich",
+    "httpx",
+    "openai",
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-httpx",
+]
+
+[project.scripts]
+afripay = "afripay.cli:main"
