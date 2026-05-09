@@ -1,0 +1,41 @@
+{
+  "name": "udhr",
+  "display_name": "Universal Declaration of Human Rights",
+  "articles": [
+    {
+      "article": "Article 3",
+      "title": "Life, liberty and security of person",
+      "keywords": ["attack", "security", "threat", "violence"]
+    },
+    {
+      "article": "Article 7",
+      "title": "Equality before the law",
+      "keywords": ["abuse", "discrimination", "equal", "harass"]
+    },
+    {
+      "article": "Article 8",
+      "title": "Right to an effective remedy",
+      "keywords": ["accountability", "remedy", "rights", "violation"]
+    },
+    {
+      "article": "Article 17",
+      "title": "Right to own property",
+      "keywords": ["evict", "forest", "land", "property", "resource"]
+    },
+    {
+      "article": "Article 21",
+      "title": "Participation in government and public service",
+      "keywords": ["budget", "commitment", "promise", "service"]
+    },
+    {
+      "article": "Article 23",
+      "title": "Right to work and just conditions",
+      "keywords": ["livelihood", "mine", "oil", "work"]
+    },
+    {
+      "article": "Article 26",
+      "title": "Right to education",
+      "keywords": ["education", "school", "student", "teacher"]
+    }
+  ]
+}
